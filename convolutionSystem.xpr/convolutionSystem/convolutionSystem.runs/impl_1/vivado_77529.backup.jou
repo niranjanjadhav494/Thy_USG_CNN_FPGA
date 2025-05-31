@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun May 18 17:23:07 2025
+# Process ID: 77529
+# Current directory: /home/niranjan/BTech_Project/ProjectSources/newGenProject5/convolutionSystem.xpr/convolutionSystem/convolutionSystem.runs/impl_1
+# Command line: vivado -log convolutionSystem_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source convolutionSystem_wrapper.tcl -notrace
+# Log file: /home/niranjan/BTech_Project/ProjectSources/newGenProject5/convolutionSystem.xpr/convolutionSystem/convolutionSystem.runs/impl_1/convolutionSystem_wrapper.vdi
+# Journal file: /home/niranjan/BTech_Project/ProjectSources/newGenProject5/convolutionSystem.xpr/convolutionSystem/convolutionSystem.runs/impl_1/vivado.jou
+# Running On: niranjan-asus, OS: Linux, CPU Frequency: 1223.538 MHz, CPU Physical cores: 12, Host memory: 16361 MB
+#-----------------------------------------------------------
+source convolutionSystem_wrapper.tcl -notrace

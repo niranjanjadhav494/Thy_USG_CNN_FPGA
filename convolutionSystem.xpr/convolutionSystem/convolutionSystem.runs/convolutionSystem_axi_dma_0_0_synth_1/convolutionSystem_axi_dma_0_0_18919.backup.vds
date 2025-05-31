@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb  6 15:20:53 2025
+# Process ID: 18919
+# Current directory: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_axi_dma_0_0_synth_1
+# Command line: vivado -log convolutionSystem_axi_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source convolutionSystem_axi_dma_0_0.tcl
+# Log file: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_axi_dma_0_0_synth_1/convolutionSystem_axi_dma_0_0.vds
+# Journal file: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_axi_dma_0_0_synth_1/vivado.jou
+# Running On: niranjan-asus, OS: Linux, CPU Frequency: 971.854 MHz, CPU Physical cores: 12, Host memory: 16361 MB
+#-----------------------------------------------------------
+source convolutionSystem_axi_dma_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1335.832 ; gain = 0.023 ; free physical = 2402 ; free virtual = 9063
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niranjan/XilinxToolsProjects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: convolutionSystem_axi_dma_0_0
+Command: synth_design -top convolutionSystem_axi_dma_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19619
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2032.195 ; gain = 378.770 ; free physical = 152 ; free virtual = 778
+---------------------------------------------------------------------------------

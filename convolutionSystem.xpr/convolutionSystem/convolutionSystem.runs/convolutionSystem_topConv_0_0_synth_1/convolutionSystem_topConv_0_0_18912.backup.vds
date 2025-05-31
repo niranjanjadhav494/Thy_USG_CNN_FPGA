@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb  6 15:20:53 2025
+# Process ID: 18912
+# Current directory: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_topConv_0_0_synth_1
+# Command line: vivado -log convolutionSystem_topConv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source convolutionSystem_topConv_0_0.tcl
+# Log file: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_topConv_0_0_synth_1/convolutionSystem_topConv_0_0.vds
+# Journal file: /home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.runs/convolutionSystem_topConv_0_0_synth_1/vivado.jou
+# Running On: niranjan-asus, OS: Linux, CPU Frequency: 1091.220 MHz, CPU Physical cores: 12, Host memory: 16361 MB
+#-----------------------------------------------------------
+source convolutionSystem_topConv_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.859 ; gain = 0.023 ; free physical = 2636 ; free virtual = 9252
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niranjan/XilinxToolsProjects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: convolutionSystem_topConv_0_0
+Command: synth_design -top convolutionSystem_topConv_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2036.184 ; gain = 376.730 ; free physical = 260 ; free virtual = 1910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'convolutionSystem_topConv_0_0' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/synth/convolutionSystem_topConv_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'topConv' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/topConv.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imageProcess' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/imageProcessTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'lineBuffer' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/lineBuffer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'lineBuffer' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/lineBuffer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'imageProcess' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/imageProcessTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'conv' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/conv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'conv' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/conv.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'convBuffer64' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/synth/convBuffer64.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_10_top' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_infrastructure_v1_1_vl_rfs.v:599]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:508]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_10_top' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'convBuffer64' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/convBuffer64/synth/convBuffer64.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'topConv' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ipshared/1252/src/topConv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'convolutionSystem_topConv_0_0' (0#1) [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/synth/convolutionSystem_topConv_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3071]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-7129] Port ACLK in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLKEN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLKEN in module axis_infrastructure_v1_1_0_util_aclken_converter_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_clk in module xpm_fifo_rst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[33] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[32] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_aclk in module xpm_fifo_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_aclk in module axis_data_fifo_v2_0_10_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2112.090 ; gain = 452.637 ; free physical = 188 ; free virtual = 1105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2126.934 ; gain = 467.480 ; free physical = 192 ; free virtual = 1070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2126.934 ; gain = 467.480 ; free physical = 194 ; free virtual = 1071
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2126.934 ; gain = 0.000 ; free physical = 223 ; free virtual = 1015
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/niranjan/XilinxToolsProjects/convolutionSystem/convolutionSystem.gen/sources_1/bd/convolutionSystem/ip/convolutionSystem_topConv_0_0/src/testing.xdc] for cell 'inst'

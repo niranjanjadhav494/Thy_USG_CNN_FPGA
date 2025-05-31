@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.923908",
+   "Default View_TopLeft":"10,274",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 2410 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 2410 -y 80 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1960 -y 110 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1180 -y 400 -defaultsOSRD
+preplace inst topConv_0 -pg 1 -lvl 2 -x 530 -y 640 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 840 -y 350 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 210 -y 630 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 3 -x 840 -y 650 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1560 -y 430 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1560 -y 740 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 7 -x 2290 -y 480 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 730 410 730 670 220 1000 240 1410 240 1730 240 2180
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 210 NJ 210 NJ 210 NJ 210 NJ 210 1720J 220 2160
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 6 420 720 680 470 1000 520 1400 590 1760 520 N
+preplace netloc topConv_0_o_intr 1 2 5 640 740 NJ 740 1410J 670 1750 500 N
+preplace netloc axi_dma_0_s2mm_introut 1 4 1 1360 460n
+preplace netloc xlconcat_0_dout 1 5 1 1740 140n
+preplace netloc processing_system7_0_DDR 1 6 2 NJ 60 N
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 NJ 80 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 5 690 230 NJ 230 NJ 230 NJ 230 2170
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 350
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 6 420 560 NJ 560 NJ 560 1370 580 1710 440 N
+preplace netloc topConv_0_m_axis 1 2 5 690 730 1000 600 N 600 N 600 2190
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 3 1 990 370n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 N 340
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1710 80n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 N 360
+levelinfo -pg 1 0 210 530 840 1180 1560 1960 2290 2410
+pagesize -pg 1 -db -bbox -sgen 0 0 2530 810
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}
