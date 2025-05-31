@@ -1,0 +1,13 @@
+\setlength{\parindent}{2em}
+\chapter{Conclusion \& Future Scope}
+    \section{Conclusion}
+    \noindent
+    Thus, in this project, an accelerated scheme for Convolution and Maxpool layers has been developed. The interface between Programmable Logic(PL) and Processing System(PS) is achieved through an AXI protocol-based interface using DMA. As discussed earlier, the entire acceleration scheme takes around 1.8ms for the feature map generation due to some design limitations on the design style in the Vivado and Vitis tools, which are used for PL design purposes and PS programming respectively; it was not possible to implement the dense layer which is the final stage in classification. Here, the use of a custom fixed-point standard is used for representing the weights, and thus, the result is a fixed-point (decimal) number it is difficult to take into account the decimal point while developing a logic at the PS level. Based on the proposed acceleration scheme for the convolution pooling architecture, the performance metrics achieved are throughput of 294.912 Gbit/s and a computing performance of 12.066 GOP/s with a power consumption of 1.484W and an energy efficiency of 8.13 GOP/(s.W)
+
+    \section{Future Scope}
+    \begin{enumerate}
+        \item To develop a robust CNN model along with a fully connected layer 
+        \item Develop a data and control logic for intra-convolution and maxpool parallelism architecture
+        \item Design a computing scheme for a multiple-layer model 
+    \end{enumerate}
+    

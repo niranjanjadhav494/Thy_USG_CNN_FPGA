@@ -1,0 +1,35 @@
+%\documentclass[../main]{subfiles}
+
+\setlength{\parindent}{2em}
+\chapter{Introduction}
+\section{Problem Synthesis}
+\justifying
+    \noindent
+    In India, there is a huge number of people who have thyroid disease, and the people are unaware of the same. This project aims to develop an algorithm to classify thyroid disorders using a machine learning algorithm, using an ultrasound image of the thyroid gland. The thyroid disease is classified as benign (non-cancerous) and malignant (cancerous), which is predicted by radiologists who have great expertise in this field, but this is a difficult and critical task at times. Thus, this project aims to develop an assistance tool for radiologists. Early detection of the thyroid can help treat the disorder at an early stage. Traditional diagnostic methods include the biopsy or FNA techniques, which are invasive to the body, and hence, people are often reluctant to undergo these diagnostic tests. The algorithm proposes a non-invasive classifier method that can predict the thyroid disorder's benign and malignant state based on the TI-RADS score. The algorithm uses an embedded device for optimal execution of the algorithm, which can further be modelled into a small device kind of thing, which can be used by normal people. 
+\section{Thyroid Nodules}
+\justifying
+    \noindent
+    The thyroid gland is an endocrine gland that is butterfly-shaped and located in the neck below the Adam’s Apple. It consists of two connected lobes which secrete two thyroid hormones – T3 and T4, and calcitonin. These thyroid hormones influence the metabolic rate of protein synthesis and growth and development in children. Hence, the thyroid gland plays a key role in controlling the proper metabolic rate of the body. Thyroid disorders include hyperthyroidism, hypothyroidism, thyroid inflammation (thyroiditis), thyroid enlargement (goitre), thyroid nodules and thyroid cancer. \par \noindent
+    A Thyroid Nodule is a common condition characterised by abnormal growth or lumps within the thyroid gland. These thyroid nodules can be solid or fluid-filled and are often detected during routine physical exams or imaging studies for unrelated conditions. This condition is more prevalent in women. \par \noindent
+    There are two types of thyroid nodules: Benign nodules and Malignant nodules. Benign nodules can be cured at the initial stages, are non-cancerous, and are not suspicious. The benign nodules need no Fine Needle Aspiration (FNA) biopsy, which is an invasive technique to detect the condition. Malignant nodules are highly suspicious as they are cancerous and may cause harm to the thyroid gland due to improper growth of the cells. Often, this kind of condition is diagnosed using an FNA Biopsy. 
+    \par \noindent The proposed CNN algorithm takes an input Ultrasound image of the patient's Thyroid gland and predicts the condition of the patient by classifying it as Benign or Malignant. Due to this, there can be a reduction in the number of biopsies.  
+
+
+\section{FPGA Accelerator}
+\justifying 
+    \noindent
+FPGA stands for Field Programmable Gate Array, which is a device capable of implementing digital designs.
+Modern FPGAs come in the form of a SoC, meaning that they consist of a Processor System (PS) and Programmable Logic (PL).
+The Processing System is a processor, usually ARM-based, and can communicate with the PL using certain interfaces. It is useful to control peripherals such as UART, SPI, etc., and sometimes acts as an interface between these peripherals and the PL.
+Programmable Logic is the part of the FPGA commonly known as the fabric. It consists of LUTs, FFs, BRAMs, and DSPs. Together, these form one Configurable Logic Block (CLB) along with programmable interconnects for logic implementation.
+The project aims at developing a scalable model for a product in which a CNN algorithm is deployed in real-time, and an SoC would be developed around it to identify the condition of the thyroid patient.\par  \noindent
+    The proposed CNN algorithm performs a lot of computations on an input image provided in a grid-like structure, where each of the squares in the grid is represented by a pixel. There are a large number of multiplication and accumulation operations which are performed in the convolutional layer of the CNN model. Hence, an FPGA accelerator is used to accelerate the computation speed of the recurring mathematical operations. This would help reduce the inference time for the prediction made by the model. 
+\newpage
+
+
+
+
+
+
+
+

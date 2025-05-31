@@ -1,0 +1,38 @@
+\section{Literature Review}
+
+\noindent
+
+\subsection{Related Work}
+ The advancement of deep learning techniques, particularly Convolutional Neural Networks (CNNs), has revolutionized medical image analysis. In the context of thyroid nodule classification, CNNs have demonstrated significant potential in enhancing diagnostic accuracy through automated ultrasound image interpretation. However, the computational complexity of these networks poses challenges for real-time processing and deployment on resource-constrained systems. To address this, Field Programmable Gate Arrays (FPGAs) have emerged as viable platforms for accelerating CNN inference with benefits in parallelism, low latency, and power efficiency.
+
+\subsection{1. CNN Architectures for Thyroid Nodule Classification}
+Several studies have explored deep learning methods for classifying thyroid nodules from ultrasound images. For instance, Gowda et al. [10403628] employed CNN-based models for thyroid nodule detection, achieving promising results in feature extraction from noisy ultrasound data. Similarly, Habchi et al. [10894176] utilised deep transfer learning to improve the classification of thyroid cancer, leveraging pre-trained CNN models to boost performance on limited medical datasets.
+Furthermore, Yang and Zhu [10692904] proposed a deep learning-based framework to discriminate between benign and malignant thyroid lesions using ultrasound imaging. This trend toward CNN-driven diagnosis is echoed in the work of Alghanimi et al. [10459588], where a hybrid approach involving CNN and ResNet50 demonstrated improved detection accuracy of thyroid nodules.
+
+#### **2. FPGA-Based CNN Acceleration**
+
+Despite the high accuracy of CNN models, their deployment in real-time clinical settings is limited by computational demand. FPGAs offer a solution by providing custom hardware acceleration. Li et al. [9918905] presented an FPGA-based accelerator using ZYNQ platforms for CNN operations, demonstrating efficiency in convolution computation through pipeline and parallel processing. This hardware-level parallelism is key to achieving low-latency performance in medical applications.
+
+Complementing this, Yanamala and Pullakandam [10026930] introduced a configurable accelerator for CNNs targeted at low-memory 32-bit edge devices. Their design focused on memory-efficient techniques like pipelining and unrolling, optimised for platforms like PYNQ-Z2, which are commonly used in embedded medical systems.
+
+Devi et al. [10723941] reviewed various deep neural network architectures, including CNN, GAN, LSTM, and RNN, highlighting their potential integration with hardware platforms for enhanced diagnostic support. Moreover, Umamaheswari et al. [10725453] demonstrated a realization of CNN using a hybrid multiplier on PYNQ-Z2, emphasizing improvements in computational throughput and energy efficiency—critical factors for real-time medical analysis.
+
+#### **3. Comparative Analysis and Design Considerations**
+
+A hybrid approach combining software-level CNN advancements with hardware accelerators is gaining traction. For example, Shen et al. [8695806] proposed a deep pipelined architecture capable of handling both 2D and 3D CNNs on FPGA, significantly enhancing throughput and scalability. This aligns with the work of Bal-Ghaoui et al. [10153008], who explored cross-disease classification for thyroid and breast cancer using CNNs with shared feature extraction mechanisms, indicating that FPGA accelerators could be generalized across similar diagnostic tasks.
+
+In another approach, Veni et al. [10882379] focused on early cancer detection by automating nodule segmentation and classification using CNNs and transfer learning, which could benefit from FPGA acceleration for deployment in portable diagnostic tools.
+
+#### **4. Summary and Future Outlook**
+
+The integration of FPGA-based accelerators with deep learning models is a promising direction for efficient and real-time thyroid nodule classification. While CNNs continue to evolve with greater depth and complexity, their compatibility with FPGA hardware, particularly platforms like ZYNQ and PYNQ-Z2, enables edge computing capabilities in clinical diagnostics. The surveyed works emphasize the importance of balancing accuracy with hardware efficiency, particularly for deployment in remote or resource-constrained healthcare environments.
+
+Future research should focus on co-design frameworks where CNN model architecture and FPGA hardware design are optimized jointly. Additionally, exploring quantization, model pruning, and low-bit arithmetic could further improve performance and energy efficiency, making automated thyroid diagnosis more accessible and reliable.
+
+---
+
+Would you like this as a formatted LaTeX section for your report or thesis?
+
+
+
+

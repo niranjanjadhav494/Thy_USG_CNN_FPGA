@@ -1,0 +1,156 @@
+\documentclass[12pt, a4paper]{report} 
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{fontspec}
+% \usepackage{biblatex} %Imports biblatex package
+% \addbibresource{references.bib} %Import the bibliography file
+\setmainfont{Times New Roman}
+
+% Load any additional packages
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{multicol}
+\usepackage{xcolor}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{acronym} 
+\usepackage{nomencl}
+\usepackage{array}
+\usepackage{subfig}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[justification=centering]{caption}
+\usepackage{enumitem}
+%\usepackage{hyperref} for hyperlink
+\usepackage{tabulary}
+\usepackage[document]{ragged2e}
+\usepackage{svg}
+\usepackage{cite}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{subfiles}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true, 
+    linkcolor=black, 
+    urlcolor=black, 
+    citecolor=black, 
+    pdfauthor=Niranjan Jadhav, 
+    pdftitle={BTech\_Project\_Report\_2024-25}
+}
+
+% \titleformat{\chapter}[block]{\LARGE\bfseries}{\thechapter.}{0.5em}{}
+% \titlespacing*{\chapter}{0pt}{10pt}{5pt}
+
+% \titleformat{\section}[block]{\Large\bfseries}{\thesection}{0.5em}{}
+% \titlespacing{\section}{0pt}{5pt}{5pt}
+
+% \titleformat{\subsection}[block]{\large\bfseries}{\thesubsection}{0.5em}{}
+% \titlespacing{\subsection}{0pt}{5pt}{5pt}
+
+\def\mytitle{Hardware Accelerator for Thyroid Nodule Classification}
+\def\firstname{Tanvi Deshmukh}
+\def\firstroll{112107013}
+\def\secondname{Karan Doshi}
+\def\secondroll{112107015}
+\def\thirdname{Niranjan Jadhav}
+\def\thirdroll{112107022}
+
+\def\mydegree{Bachelor of Technology}
+\def\mySpecialization{Electronics and Telecommunication}
+\def\mysupervisor{Dr. Vaishali V. Ingale}
+
+\def\mymonth{May}
+\def\myyear{2025}
+
+\renewcommand*\contentsname{Table of Contents}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+
+
+\begin{document}
+ \baselineskip=18pt plus1pt
+ \setcounter{secnumdepth}{3}
+ \setcounter{tocdepth}{3}
+ \pagenumbering{roman}
+ 
+ %Front Matter %%Edit to add or remove a page/section of front matter
+ \include{./FrontMatter/titlePage}
+ \include{./FrontMatter/certificate}
+ \include{./FrontMatter/approvalSheet}
+ \newpage
+ \include{./FrontMatter/declaration}
+ 
+ \include{./FrontMatter/acknowledgements}
+ \newpage
+ %\addcontentsline{toc}{chapter}{List of Publication}
+ %\include{./FrontMatter/publication}
+ % \addcontentsline{toc}{chapter}{Table of Contents}
+ 
+ \tableofcontents\newpage
+ \include{./FrontMatter/abstract}
+ 
+ \listoffigures
+ \addcontentsline{toc}{chapter}{List of Figures}
+ 
+ 
+  \listoftables\newpage
+  \addcontentsline{toc}{chapter}{List of Tables}
+
+ 
+ \include{./FrontMatter/abbreviations}
+ 
+%Main material
+ \clearpage
+ \pagenumbering{arabic}
+
+ % \let\clearpage\relax
+ \input{./Sections/section1}
+ \input{./Sections/section2}
+ \input{./Sections/section3}
+ \input{./Sections/section4}
+ \input{./Sections/section5}
+ \input{./Sections/section6}
+ \input{./Sections/section7}
+ \input{./Sections/section8}
+ \newpage
+
+ \bibliographystyle{plain}
+ \begin{thebibliography}{99}
+
+\bibitem{1} L. Li, X. Chen and W. Gao, "Implementation of Convolutional Neural Network Accelerator based on ZYNQ," 2022 IEEE International Conference on Advances in Electrical Engineering and Computer Applications (AEECA), Dalian, China, 2022, pp. 158--165, doi: \texttt{10.1109/AEECA55500.2022.9918905}.
+
+\bibitem{2} J. Shen, Y. Huang, M. Wen and C. Zhang, "Toward an Efficient Deep Pipelined Template-Based Architecture for Accelerating the Entire 2-D and 3-D CNNs on FPGA," \textit{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, vol. 39, no. 7, pp. 1442--1455, July 2020, doi: \texttt{10.1109/TCAD.2019.2912894}.
+
+\bibitem{3} S. Gowda, T. D, V. B. Sheth, V. R, G. N and H. P, "Thyroid Nodule Detection and Classification Using Deep Learning," 2023 International Conference on Computational Intelligence for Information, Security and Communication Applications (CIISCA), Bengaluru, India, 2023, pp. 200--205, doi: \texttt{10.1109/CIISCA59740.2023.00047}.
+
+\bibitem{4} Y. Habchi, H. Kheddar and Y. Himeur, "Ultrasound Images Classification of Thyroid Cancer using Deep Transfer Learning," 2024 International Conference on Telecommunications and Intelligent Systems (ICTIS), Djelfa, Algeria, 2024, pp. 1--6, doi: \texttt{10.1109/ICTIS62692.2024.10894176}.
+
+\bibitem{5} X. Yang and G. Zhu, "Ultrasound-based discrimination of thyroid cancer based on deep learning," 2024 5th International Conference on Artificial Intelligence and Electromechanical Automation (AIEA), Shenzhen, China, 2024, pp. 939--943, doi: \texttt{10.1109/AIEA62095.2024.10692904}.
+
+\bibitem{6} G. B. Alghanimi, H. K. Aljobouri and K. A. Al-shimmari, "CNN and ResNet50 Model Design for Improved Ultrasound Thyroid Nodules Detection," 2024 ASU International Conference in Emerging Technologies for Sustainability and Intelligent Systems (ICETSIS), Manama, Bahrain, 2024, pp. 1000--1004, doi: \texttt{10.1109/ICETSIS61505.2024.10459588}.
+
+\bibitem{7} P. Qin, K. Wu, Y. Hu, J. Zeng and X. Chai, "Diagnosis of Benign and Malignant Thyroid Nodules Using Combined Conventional Ultrasound and Ultrasound Elasticity Imaging," \textit{IEEE Journal of Biomedical and Health Informatics}, vol. 24, no. 4, pp. 1028--1036, April 2020, doi: \texttt{10.1109/JBHI.2019.2950994}.
+
+\bibitem{8} N. Veni, M. Harshavardhan, L. T K, P. Sritha, P. Chitra and H. Yaseen, "Automatic Detection of Thyroid Nodules in Ultrasound Images using Convolutional Neural Networks for Early Cancer Diagnosis," 2024 International Conference on Artificial Intelligence and Quantum Computation-Based Sensor Application (ICAIQSA), Nagpur, India, 2024, pp. 1--6, doi: \texttt{10.1109/ICAIQSA64000.2024.10882379}.
+
+\bibitem{9} T. K. Devi, K. N. Baluprithviraj, J. S. Suresh, G. Kalaiarasi, A. S. Sagayaraj and P. Sakthivel, "Detection and Characterization of Thyroid Cancer Nodule Using Deep Neural Networks -A Review," 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), Kamand, India, 2024, pp. 1--6, doi: \texttt{10.1109/ICCCNT61001.2024.10723941}.
+
+\bibitem{10} M. Bal-Ghaoui, M. H. E. Y. Alaoui, A. Jilbab and A. Bourouhou, "Approaching Cross-Disease Features for Improved Classification of Thyroid and Breast Cancer in Ultrasound Images," 2023 3rd International Conference on Innovative Research in Applied Science, Engineering and Technology (IRASET), Mohammedia, Morocco, 2023, pp. 1--5, doi: \texttt{10.1109/IRASET57153.2023.10153008}.
+
+\bibitem{11} A. Umamaheswari, S. Kripa and V. Jeyalakshmi, "Realization of CNN Using Hybrid Multiplier With PYNQ-Z2," 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), Kamand, India, 2024, pp. 1--7, doi: \texttt{10.1109/ICCCNT61001.2024.10725453}.
+
+\bibitem{12} R. M. R. Yanamala and M. Pullakandam, "An Efficient Configurable Hardware Accelerator Design for CNN on Low Memory 32-Bit Edge Device," 2022 IEEE International Symposium on Smart Electronic Systems (iSES), Warangal, India, 2022, pp. 112--117, doi: \texttt{10.1109/iSES54909.2022.00033}.
+
+\bibitem{13} J. W. Cui, Y. S. Zhou, F. Zhang, C. Yin and D. L. Xiang, "FPGA implementation of convolutional neural network based on pipeline architecture," \textit{Journal of Beijing University of Chemical Technology (Natural Science Edition)}, vol. 48, no. 5, pp. 111--118, 2021, doi: \texttt{10.13543/j.bhxbzr.2021.05.014}.
+
+\bibitem{14} Gong Jie, Zhao Shuo, He Hu and Deng Ning, "Design of Quantized CNN Acceleration System Based on FPGA," \textit{Computer Engineering}, vol. 48, no. 3, pp. 170--174+196, 2022, doi: \texttt{10.19678/j.issn.1000-3428.0060675}.
+
+\end{thebibliography}
+
+\end{document}

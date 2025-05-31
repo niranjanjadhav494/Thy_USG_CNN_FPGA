@@ -1,0 +1,23 @@
+%\documentclass[../main.tex]{subfiles}
+
+\setlength{\parindent}{2em}
+\chapter{Research Gap \& Problem Statement}
+\section{Research Gap}
+    \noindent Extensive research has been done on FPGA-based hardware accelerators, but some areas are still not fully explored.
+
+    \begin{itemize}
+        \item \textbf{HLS Approach}: A lot of work aimed at developing an FPGA-based hardware acceleration scheme, which adopted an HLS(High Level Synthesis) methodology. This is a good approach for faster development of hardware-level design, yet it may suffer from inefficient design if not used properly.
+
+        \item \textbf{Standard Model/Dataset}: It is observed that the models developed on HDL-based methodology also use very commonly used datasets in machine learning, such as the MNIST handwritten digits dataset and CIFAR10, as well as prevalent CNN models such as the LeNet.
+    \end{itemize}
+\section{Problem Statement}
+\noindent
+The HDL-based design methodology has been kept at the centre of developing an FPGA hardware accelerator scheme, allowing for better control of the hardware being developed. Thus, this project aims at a systematic approach with the following objectives:
+\begin{enumerate}
+    \item Design a CNN Model for Thyroid Nodule Classification with \textgreater 90\% Accuracy.
+    \item Develop a Hardware Accelerator Architecture for the CNN Model.
+    \item Design an Accurate Compute Unit for Hardware-Level Operations.
+    \item Design Data and Control Logic for CNN Layers at RTL Level and System Integration.
+    \item Develop a GUI for the Hardware Accelerator scheme.
+\end{enumerate}
+\newpage
