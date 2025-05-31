@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Thyroid Classifier
+Comment=Application for User FPGA interface
+# Path to the logo on the desktop
+Icon=/home/niranjan/Documents/thyright_innovations_logo.png
+# Shell Script path containing GUI exec
+Exec=/home/niranjan/Desktop/FinalProject/ThyroidCare.sh
+Terminal=true
+Categories=Utility;
+StartupNotify=true
+
